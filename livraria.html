@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" lang="pt-br"> 
+    <meta name="Descrição" content="Esta página é o menu onde se encontram os livros e suas categorias" >
+    <meta name="Palavras chave" content="Categorias, Livros, Livraria">
+    <meta name="Autor" content="Vitor Vinícius">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preload" href="livraria.css" as="style">
+    <link rel="preload" href="/javascript/menu1.js" as="script">
+    <link rel="stylesheet" href="livraria.css">
+    <link rel="shortcut icon" href="img/fvc.ico"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <div id="menu-horizontal">   
+        <header class="header">
+            <i class='bx bx-menu' id="botao-menu"> <span id="botao-categorias">Categorias</span></i>
+            <nav>
+                <ul class="menu">
+                    <li><a href="bookslife.html" target="_blank">Book'sLife</a></li>
+                    <li><a href="Artigos.html" target="_blank">Artigos</a></li>
+                    <li><a href="Suporte.html" targer="_self">Suporte</a></li>
+                    <li><a href="bookslife.html" target="_self">Logout</a></li>
+                    <li><div class="input-group mb-3">
+                        <input type="text" id="barra-pesquisa" class="form-control" placeholder="Pesquisar Livro.." aria-label="Pesquisar" aria-describedby="Pesquisar">
+                      </div></li>
+                      <li><a href="#"><i class='bx bx-search' id="icone-pesquisa"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <i class='bx bx-up-arrow-circle' id="link-topo" onclick="voltar_ao_topo()"></i>
+
+    <section class="livros">
+
+        <div class="polaroid">
+            <a href="Livros/OCrimeDoPadreAmaro.pdf" download="OCrimeDoPadreAmaro.pdf" type="application/pdf"><img src="img/capa15.jpg"></a>
+            <p class="container">O Crime do Padre Amaro</p>
+            <a href="Livros/OCrimeDoPadreAmaro.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	   	    <a href="" download="OCrimeDoPadreAmaro.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+
+        <div class="polaroid">
+            <a href="Livros/DomCasmurro.pdf" download="DomCasmurro.pdf" type="application/pdf"><img src="img/capa2.jpg"></a>
+            <p class="container">Dom Casmurro</p>
+            <a href="Livros/DomCasmurro.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+            <a href="" download="DomCasmurro.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/OAlienista.pdf" download="OAlienista" type="application/pdf"><img src="img/capa3.jpg"></a>
+            <p class="container">O Alienista</p>
+            <a href="Livros/OAlienista.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="OAlienista.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/ADivinaComedia.pdf" download="ADivinaComedia.pdf" type="application/pdf"><img src="img/capa4.jpg"></a>
+            <p class="container">A Divina Comédia</p>
+            <a href="Livros/ADivinaComedia.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="ADivinaComedia.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/AMetamorfose.pdf" download="AMetamorfose.pdf" type="application/pdf"> <img src="img/capa5.jpg"></a>
+            <p class="container">A Metamorfose</p>
+            <a href="Livros/AMetamorfose.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="AMetamorfose.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/A Viuvinha.pdf" download="A Viuvinha.pdf" type="application/pdf"><img src="img/capa6.jpg"></a>
+            <p class="container">A Viuvinha</p>
+            <a href="Livros/A Viuvinha.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="A Viuvinha.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/Iracema.pdf" download="Iracema.pdf" type="application/pdf"><img src="img/capa7.jpg"></a>
+            <p class="container">Iracema</p>
+            <a href="Livros/Iracema.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="Iracema.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/OCortiço.pdf" download="OCortiço.pdf" type="application/pdf"><img src="img/capa8.jpg"></a>
+            <p class="container">O Cortiço</p>
+            <a href="Livros/OCortiço.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="OCortiço.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/ARepublicaDePlatao.pdf" download="ARepublicaDePlatao.pdf" type="application/pdf"><img src="img/capa9.jpg"></a>
+            <p class="container">A República</p>
+            <a href="Livros/ARepublicaDePlatao.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="ARepublicaDePlatao.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/Confissões.pdf" download="Confissões.pdf" type="application/pdf"><img src="img/capa10.jpg"></a>
+            <p class="container">Confissões</p>
+            <a href="Livros/Confissões.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="Confissões.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/OBanquete.pdf" download="OBanquete.pdf" type="application/pdf"><img src="img/capa11.jpg"></a>
+            <p class="container">O Banquete</p>
+            <a href="Livros/OBanquete.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="OBanquete.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/AArteDaGuerra.pdf" download="AArteDaGuerra.pdf" type="application/pdf"><img src="img/capa12.jpg"></a>
+            <p class="container">A Arte da Guerra</p>
+            <a href="Livros/AArteDaGuerra.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="AArteDaGuerra.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/OMercadorDeVeneza.pdf" download="OMercadorDeVeneza.pdf" type="application/pdf"><img src="img/capa13.jpg"></a>
+            <p class="container">O Mercador de Veneza</p>
+            <a href="Livros/OMercadorDeVeneza.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+            <a href="" download="OMercadorDeVeneza.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/OsSertões.pdf" download="OsSertões.pdf" type="application/pdf"><img src="img/capa14.jpg"></a>
+            <p class="container">Os Sertões</p>
+            <a href="Livros/OsSertões.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="OsSertões.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/CharnecaEmFlor.pdf" download="CharnecaEmFlor.pdf" type="application/pdf"><img src="img/capa28.jpg"></a>
+            <p class="container">Charneca Em Flor</p>
+            <a href="Livros/CharnecaEmFlor.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+            <a href="" download="CharnecaEmFlor.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/ARevoluçãoDosBichos.pdf" download="ARevoluçãoDosBichos.pdf" type="application/pdf"><img src="img/capa16.jpg"></a>
+            <p class="container">A Revolução dos Bichos</p>
+            <a href="Livros/ARevoluçãoDosBichos.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="ARevoluçãoDosBichos.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/Mensagem.pdf" download="Mensagem.pdf" type="application/pdf"><img src="img/capa17.jpg"></a>
+            <p class="container">Mensagem</p>
+            <a href="Livros/Mensagem.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="Mensagem.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/Ilíada.pdf" download="Ilíada.pdf" type="application/pdf"><img src="img/capa18.jpg"></a>
+            <p class="container">Ilíada</p>
+            <a href="Livros/Ilíada.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="Ilíada.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/Hamlet.pdf" download="Hamlet.pdf" type="application/pdf"><img src="img/capa19.jpg"></a>
+            <p class="container">Hamlet</p>
+            <a href="Livros/Hamlet.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="Hamlet.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/Dracula.pdf" download="Dracula.pdf" type="application/pdf"><img src="img/capa20.jpg"></a>
+            <p class="container">Drácula</p>
+            <a href="Livros/Dracula.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="Dracula.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+
+        <div class="polaroid">
+            <a href="Livros/AIlustreCasaDeRamires.pdf" download="AIlustreCasaDeRamires.pdf" type="application/pdf"><img src="img/capa21.jpg"></a>
+            <p class="container">A Ilustre Casa de Ramires</p>
+            <a href="Livros/AIlustreCasaDeRamires.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+            <a href="" download="AIlustreCasaDeRamires.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+
+        <div class="polaroid">
+            <a href="Livros/AsViagensDeGulliver.pdf" download="AsViagensDeGulliver.pdf" type="application/pdf"><img src="img/capa22.jpg"></a>
+            <p class="container">As Viagens de Gulliver</p>
+            <a href="Livros/AsViagensDeGulliver.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="AsViagensDeGulliver.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/OEuProfundoEOsOutrosEus.pdf" download="OEuProfundoEOsOutrosEus.pdf" type="application/pdf"><img src="img/capa1.jpg" title="Fernando Pessoa"></a>
+            <p class="container" >O Eu Profundo e Outros Eus</p>
+            <a href="Livros/OEuProfundoEOsOutrosEus.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="OEuProfundoEOsOutrosEus.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/AliceNoPaisDasMaravilhas.pdf" download="AliceNoPaisDasMaravilhas.pdf" type="application/pdf"><img src="img/capa23.jpg"></a>
+            <p class="container">Alice no País das Maravilhas</p>
+            <a href="Livros/AliceNoPaisDasMaravilhas.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="AliceNoPaisDasMaravilhas.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/OLivroDaSelva.pdf" download="OLivroDaSelva.pdf" type="application/pdf"><img src="img/capa24.jpg"></a>
+            <p class="container">O Livro da Selva</p>
+            <a href="Livros/OLivroDaSelva.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="OLivroDaSelva.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+
+        <div class="polaroid">
+            <a href="Livros/OProcesso.pdf" download="OProcesso.pdf" type="application/pdf"><img src="img/capa25.jpg"></a>
+            <p class="container">O Processo</p>
+            <a href="Livros/OProcesso.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="OProcesso.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+
+        <div class="polaroid">
+            <a href="Livros/Contos.pdf" download="Contos.pdf" type="application/pdf"><img src="img/capa26.jpg"></a>
+            <p class="container">Contos</p>
+            <a href="Livros/Contos.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+            <a href="" download="Contos.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+
+        <div class="polaroid">
+            <a href="Livros/LivroDoDesassossego.pdf" download="LivroDoDesassossego.pdf" type="application/pdf"><img src="img/capa27.jpg"></a>
+            <p class="container">Livro do Desassossego</p>
+            <a href="Livros/LivroDoDesassossego.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="LivroDoDesassossego.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+
+        <div class="polaroid">
+            <a href="Livros/PeterPanEWendy.pdf" download="PeterPanEWendy.pdf" type="application/pdf"><img src="img/capa29.jpg"></a>
+            <p class="container">PeterPan e Wendy</p>
+            <a href="Livros/PeterPanEWendy.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="PeterPanEWendy.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/Cidadela.pdf" download="Cidadela.pdf" type="application/pdf"><img src="img/capa30.jpg"></a>
+            <p class="container">Cidadela</p>
+            <a href="Livros/Cidadela.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="Cidadela.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/DomQuixote.pdf" download="DomQuixote.pdf" type="application/pdf"><img src="img/capa31.jpg"></a>
+            <p class="container">Dom Quixote</p>
+            <a href="Livros/DomQuixote.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="DomQuixote.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+        <div class="polaroid">
+            <a href="Livros/RomeuEJulieta.pdf" download="RomeuEJulieta.pdf" type="application/pdf"><img src="img/capa32.jpg"></a>
+            <p class="container">Romeu e Julieta</p>
+            <a href="Livros/RomeuEJulieta.pdf" target="_blank"><button type="button" class="button-livros" id="button-ler">Ler Online</button></a>
+  	    	<a href="" download="RomeuEJulieta.pdf"><button type="button" class="button-livros" id="button-baixar">Baixar Pdf</button></a>
+        </div>
+    </section>
+
+    <div id="menu-lateral" class="menu effect">
+        <nav id="nav-menu-lateral">
+            <div>
+                <i class='bx bxs-tag-x' id="botao-fechar"></i> 
+            </div>
+            <ul>
+                <li><a href="#"><i class='bx bx-heart'></i>Romance</a></li>
+                <li><a href="#"><i class='bx bx-anchor'></i>Aventura</a></li>
+                <li><a href="#"><i class='bx bx-bot'></i>Ficção Científica</a></li>
+                <li><a href="#"><i class='bx bx-cctv'></i>Distopia</a></li>
+                <li><a href="#"><i class='bx bx-question-mark'></i>Filosofia</a></li>
+                <li><a href="#"><i class='bx bx-book'></i>Literatura Clássica</a></li>
+                <li><a href="#"><i class='bx bx-body'></i>Biografias</a></li>
+                <li><a href="#"><i class='bx bx-glasses-alt'></i>Poemas e Poesia</a></li>
+                <li><a href="#"><i class='bx bx-laugh'></i>Humor</a></li>
+                <li><a href="#"><i class='bx bx-brain'></i>Ensaios</a></li>
+                <li><a href="#"><i class='bx bx-wind'></i>Contos e Crônicas</a></li>
+                <li><a href="#"><i class='bx bx-ghost'></i>Terror e Suspense</a></li>
+                <li><a href="#"><i class='bx bxs-bible'></i>Religião e Teologia</a></li>
+                <li><a href="#"><i class='bx bx-taxi'></i>Policial</a></li>
+                <li><a href="#"><i class='bx bx-music'></i>Artes e Musica</a></li>
+                <li><a href="#"><i class='bx bx-pencil' ></i>Linguística</a></li>
+                <li><a href="#"><i class='bx bx-bong'></i>Ciências</a></li>
+            </ul>
+        </nav>  
+    </div>
+
+    <div class="push"></div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Book'slife</h3>
+            <p>Nosso time competente está sempre em busca de melhorar os nossos serviços e satisfazer os
+             nossos leitores, se tiver alguma queixa ou crítica construtiva nos conte na aba suporte.</p>
+                <ul class="socials">
+                 <li><a href=""><i class='bx bxl-facebook'></i></i></a></li>
+                 <li><a href=""><i class='bx bxl-twitter'></i></i></a></li>
+                 <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                 <li><a href=""><i class='bx bxl-google-plus'></i></i></a></li>
+                 <li><a href="https://www.linkedin.com/in/vitorvin%C3%ADciussilva/"><i class='bx bxl-linkedin'></i></a></li>
+                </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2021 Book'sLife. Designed by <span>Vitor</span></p>
+        </div>
+    </footer>   
+    <script src="/javascript/menu1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
