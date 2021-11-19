@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="estilodark.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9c9588fb9e.js" crossorigin="anonymous"></script> 
+    <link rel="shortcut icon" href="imagens/fvc.ico"/>
+
+</head>
+
+<!---->
+<body class="bg">
+    <form id= "logins" >
+        <input type="submit" class="dol" value="Claro">
+
+         
+                <fieldset style = "width: 30%; height: 650px; margin: 80px auto;">
+                <h1>Book'sLife</h1> 
+                <img src="imagens/Logo.jpg" class= "logo"> <br> <br>
+                <legend>CADASTRO</legend> <br> <br>
+
+    <div class= "nome" >
+                <label class="pl" for="nome"> Nome</label>
+                <input class="pi" type="text" nome="login" id="Nome" class="form-" placeholder="Digite seu Nome" 
+                required oninvalid="this.setCustomValidity('Este campo está vazio ou incorreto!')" onchange="try{setCustomValidity('')}catch(e){}"> <br> 
+    </div> 
+
+    <div class= "sobrenome" >
+                <label class="pl"  for="Sobrenome"> Sobrenome</label>
+                <input class="pi" type="text" nome="Cadastro" id="Sobrenome" class="form-" placeholder="Digite seu Sobrenome" 
+                 required oninvalid="this.setCustomValidity('Este campo está vazio ou incorreto!')" onchange="try{setCustomValidity('')}catch(e){}"> <br> 
+    </div> 
+
+    <div class= "mail" >
+                <label class="pl" for="email"> Email</label>
+                <input class="pi" type="email" nome="Cadastro" id="email" class="form-" placeholder="Digite seu EMAIL" 
+                 required oninvalid="this.setCustomValidity('Este campo está vazio ou incorreto!')" onchange="try{setCustomValidity('')}catch(e){}"> <br> 
+    </div>
+    
+    <div class= "pass">
+                <label class="pl" for="senha">Senha</label>
+                <input class="pi" type="password" nome="Cadastro" id="senha" placeholder="Digite sua Senha" 
+                 required oninvalid="this.setCustomValidity('Este campo está vazio ou incorreto!')" onchange="try{setCustomValidity('')}catch(e){}"> <br>
+        
+    <div class= "pass2">
+                <label class="pl" for="senha2"> Confirme sua Senha</label>
+                <input class="pi" type="password" nome="Cadastro" id="senha2" placeholder="Digite sua Senha" 
+                 required oninvalid="this.setCustomValidity('Este campo está vazio ou incorreto!')" onchange="try{setCustomValidity('')}catch(e){}"> <br> <br>
+                <input type="button" for= "logins" class= "btn btn-dark but" class= "sbm" onClick="login(this.form)" value="Cadastrar"> <br> <br>
+
+    <div class= "cad">
+            
+            <a href="/logindark.html" class="cds" >Já sou cadastrado.</a>
+    </div>
+    
+</fieldset>
+
+<!--Rodapé-->
+<div class="push"> </div>
+<footer>
+    <div class="footer-content">
+        <h3>Bookslife</h3>
+        <p>Nosso time competente está sempre em busca de melhorar os nossos serviços e satisfazer os
+         nossos leitores, se tiver alguma queixa ou crítica construtiva nos conte na aba suporte.</p>
+            <ul class="socials">
+             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+             <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy;2021 BooksLife. Designed by <span>DaviGuto</span></p>
+    </div>
+</footer>
+        
+        
+
+    </form>
+    
+
+</div>
+<script src="cadastrodark.js"></script>
+
+</body>
+
+</html>

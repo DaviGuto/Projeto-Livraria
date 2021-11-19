@@ -1,0 +1,209 @@
+
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: georgia, sans-serif;
+}
+
+
+.bg{
+    background-image: url(/imagens/Back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+h1{
+    
+    font-size: x-large;
+    font-style: unset;
+    color: rgb(28, 31, 35);
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+.dol{
+    color: #026858;
+    background-color: #EDEDED;
+    border-radius: 10px;
+    outline: none;
+    margin-left:  95%;
+    margin-top: 20px;
+    font-style: oblique;
+
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        
+
+    }
+}
+form{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+
+
+
+fieldset
+{
+    position: relative;
+    background-color: #4abdac;
+    border-radius: 20px;
+    text-align: center;
+    font-family: cursive;
+    color: rgb(28, 31, 35);
+    box-shadow: 0px 0px 20px rgb(82, 87, 47);
+    
+
+}
+.posit-objt{
+    border-left: 30px;
+    align-items: center;
+    text-align: left;
+    display: block;
+    color: black;
+    margin-left: 125px;
+
+}
+
+
+.logo{
+    width: 100px;
+    
+    border-radius: 50px;
+}
+.mail > label{
+    display: block;
+    width: 41%;
+    
+}
+.mail > input{
+    border: 0 none;
+    border-radius: 5px;
+    width: 70%;
+    background-color: rgb(28, 31, 35);
+    color: whitesmoke;
+}
+
+
+.rec{
+    position: left;
+    font-size: 10px;
+    width: 55%;
+    display: block;
+    
+    color: rgb(28, 31, 35);
+    
+}
+.rec:hover{
+    color: #f7b733;
+}
+
+.btnlg {
+    border-radius: 20px;
+    border-bottom-color: rgb(82, 87, 47);
+    font-style: italic;
+}
+
+.but{
+    border-radius: 20px;
+}
+.cad{
+    color: rgb(28, 31, 35);
+    text-decoration: none;
+    
+}  
+
+.cad:hover{
+    color: #f7b733;
+}
+
+.push{
+    margin-bottom: 200px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4abdac;
+    color: rgb(28, 31, 35);
+    height: auto;
+    width: 100%;
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2px;
+    padding-top: 20px;
+    margin-bottom: 2px;
+}
+.footer-content p{
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(28, 31, 35);
+}
+.socials a i{
+    font-size: 22px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #f7b733;
+}
+.footer-bottom{
+    background-color: #4abdac;
+    width: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 15px;
+    word-spacing: 2px;
+}
+.footer-bottom span{
+    opacity: .7;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
